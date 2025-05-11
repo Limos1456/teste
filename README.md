@@ -8,8 +8,7 @@ O projeto demonstra o uso de tecnologias modernas do Android, como a arquitetura
 
 ## Autores
 
-* [Seu Nome / Nome da Equipe Aqui]
-    * *(Você pode adicionar mais autores ou informações de contato aqui)*
+* Vitor Neres de Souza e Silva
 
 ## ✨ Funcionalidades Desenvolvidas
 
@@ -66,21 +65,14 @@ O projeto demonstra o uso de tecnologias modernas do Android, como a arquitetura
 
 * A funcionalidade de anexar imagem permite que o usuário selecione uma imagem da galeria e seu URI (identificador do arquivo no sistema) é salvo no banco de dados.
 * A exibição da imagem nas telas de listagem e detalhes depende da validade e acessibilidade contínua desse URI pelo aplicativo.
-* **Limitação Conhecida:** Devido à forma como os URIs de conteúdo (`content://`) são gerenciados pelo sistema Android (muitas vezes concedendo permissões de acesso temporárias), a imagem pode não ser exibida corretamente após o aplicativo ser fechado e reaberto, ou após algum tempo. Isso pode resultar na exibição de um ícone de erro no lugar da imagem desejada. Uma solução mais robusta para garantir a persistência da imagem (como copiar a imagem para o armazenamento interno privado do aplicativo) não foi implementada nesta versão do código documentada.
 
 ## ⚙️ Instruções de Instalação e Execução
 
 1.  **Pré-requisitos:**
     * Android Studio (versão estável mais recente recomendada, ex: Iguana, Jellyfish ou posterior).
     * JDK (Java Development Kit) 17 ou superior (geralmente vem embutido com o Android Studio).
-    * Um Emulador Android configurado (API 26 ou superior) ou um Dispositivo Android físico (API 26 ou superior).
+    * Um Emulador Android configurado (API 36 ou superior) ou um Dispositivo Android físico (API 26 ou superior).
 
-2.  **Clonar o Repositório (se aplicável):**
-    ```bash
-    git clone [URL_DO_SEU_REPOSITORIO_AQUI]
-    cd [NOME_DA_PASTA_DO_PROJETO]
-    ```
-    Ou, se você recebeu os arquivos de código de outra forma, certifique-se de que estão na estrutura de pastas correta.
 
 3.  **Abrir no Android Studio:**
     * Abra o Android Studio.
@@ -98,6 +90,6 @@ O projeto demonstra o uso de tecnologias modernas do Android, como a arquitetura
 
 6.  **Solução de Problemas Comuns:**
     * **Erro de SDK não encontrado:** Verifique se você tem o Android SDK especificado no `build.gradle (Module :app)` (campo `compileSdk`) instalado através do SDK Manager no Android Studio ("Tools" > "SDK Manager").
-    * **Erro de `minSdk`:** O projeto está configurado para `minSdk = 26`. Certifique-se de que seu emulador/dispositivo atende a este requisito.
+    * **Erro de `minSdk`:** O projeto está configurado para `minSdk = 34`. Certifique-se de que seu emulador/dispositivo atende a este requisito.
 
 ---
